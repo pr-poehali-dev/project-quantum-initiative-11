@@ -70,14 +70,14 @@ export function Contact() {
             >
               <div>
                 <p className="text-xs tracking-widest uppercase text-muted-foreground mb-2">Почта</p>
-                <a href="mailto:info@sgr.pro" className="text-foreground hover:text-sage transition-colors">
-                  info@sgr.pro
+                <a href="mailto:expert-reg@mail.ru" className="text-foreground hover:text-sage transition-colors">
+                  expert-reg@mail.ru
                 </a>
               </div>
               <div>
                 <p className="text-xs tracking-widest uppercase text-muted-foreground mb-2">Телефон</p>
-                <a href="tel:+74950000000" className="text-foreground hover:text-sage transition-colors">
-                  +7 (495) 000-00-00
+                <a href="tel:+79619813874" className="text-foreground hover:text-sage transition-colors">
+                  +7 (961) 981 38 74
                 </a>
               </div>
             </div>

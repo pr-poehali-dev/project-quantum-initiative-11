@@ -9,7 +9,7 @@ export function Header() {
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
           <a href="/" className="font-serif text-2xl tracking-wide text-foreground">
-            СГР<span className="text-sage">.</span>про
+            Экспертиза<span className="text-sage"> и регистрация</span>
           </a>
 
           {/* Desktop Navigation */}

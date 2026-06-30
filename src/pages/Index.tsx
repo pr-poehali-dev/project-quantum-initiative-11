@@ -9,7 +9,6 @@ import { Documents } from "@/components/Documents"
 import { Results } from "@/components/Results"
 import { Regulations } from "@/components/Regulations"
 import { PricingFactors } from "@/components/PricingFactors"
-import { Testimonial } from "@/components/Testimonial"
 import { Contact } from "@/components/Contact"
 import { Footer } from "@/components/Footer"
 
@@ -27,7 +26,6 @@ export default function Index() {
       <Results />
       <Regulations />
       <PricingFactors />
-      <Testimonial />
       <Contact />
       <Footer />
     </main>
