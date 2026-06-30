@@ -1,57 +1,24 @@
 import { useEffect, useRef, useState } from "react"
+import Icon from "@/components/ui/icon"
 
-const services = [
+const steps = [
   {
-    title: "Жилые интерьеры",
-    description: "Полное преображение дома с учётом вашего образа жизни. От отдельных комнат до целых резиденций.",
-    icon: (
-      <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-        />
-      </svg>
-    ),
+    number: "I",
+    title: "Лабораторные исследования",
+    description: "Испытываем образцы в аккредитованных лабораториях. На выходе — протоколы испытаний.",
+    icon: "FlaskConical",
   },
   {
-    title: "Планировка",
-    description: "Продуманные решения, создающие естественный поток и функциональные зоны для жизни, работы и отдыха.",
-    icon: (
-      <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"
-        />
-      </svg>
-    ),
+    number: "II",
+    title: "Санитарно-эпидемиологическая экспертиза",
+    description: "Оценку проводит орган инспекции Роспотребнадзора. Получаем Экспертное заключение.",
+    icon: "ClipboardCheck",
   },
   {
-    title: "Подбор материалов",
-    description: "Натуральные материалы и авторские предметы ручной работы, которые красиво стареют и рассказывают историю.",
-    icon: (
-      <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
-        />
-      </svg>
-    ),
-  },
-  {
-    title: "Светодизайн",
-    description: "Многоуровневое освещение, меняющееся в течение дня, создающее атмосферу и поддерживающее благополучие.",
-    icon: (
-      <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
-        />
-      </svg>
-    ),
+    number: "III",
+    title: "Регистрация в департаменте РПН",
+    description: "Итоговый этап. Вы получаете бланк СГР и запись в Едином реестре.",
+    icon: "ShieldCheck",
   },
 ]
 
@@ -86,32 +53,37 @@ export function Services() {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
-            Наши услуги
+            Как проходит регистрация
           </p>
           <h2
             className={`font-serif text-4xl md:text-5xl lg:text-6xl font-light text-foreground text-balance transition-all duration-1000 delay-200 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
-            Что мы делаем
+            Процесс получения СГР: прозрачно и по шагам
           </h2>
         </div>
 
-        {/* Services Grid */}
-        <div className="grid md:grid-cols-2 gap-px bg-border">
-          {services.map((service, index) => (
+        {/* Steps Grid */}
+        <div className="grid md:grid-cols-3 gap-px bg-border">
+          {steps.map((step, index) => (
             <div
-              key={service.title}
-              className={`group bg-background p-10 lg:p-14 transition-all duration-1000 hover:bg-card ${
+              key={step.title}
+              className={`group bg-background p-10 lg:p-12 transition-all duration-1000 hover:bg-card ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}
               style={{ transitionDelay: `${300 + index * 150}ms` }}
             >
-              <div className="text-sage mb-6 transition-transform duration-500 group-hover:scale-110">
-                {service.icon}
+              <div className="flex items-baseline gap-4 mb-6">
+                <span className="font-serif text-4xl text-stone/50 group-hover:text-sage transition-colors duration-500">
+                  {step.number}
+                </span>
+                <div className="text-sage transition-transform duration-500 group-hover:scale-110">
+                  <Icon name={step.icon} size={28} />
+                </div>
               </div>
-              <h3 className="font-serif text-2xl md:text-3xl text-foreground mb-4">{service.title}</h3>
-              <p className="text-muted-foreground leading-relaxed">{service.description}</p>
+              <h3 className="font-serif text-2xl md:text-[1.6rem] leading-tight text-foreground mb-4">{step.title}</h3>
+              <p className="text-muted-foreground leading-relaxed">{step.description}</p>
             </div>
           ))}
         </div>

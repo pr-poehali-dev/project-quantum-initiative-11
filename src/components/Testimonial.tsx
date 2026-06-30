@@ -39,8 +39,9 @@ export function Testimonial() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          Работа с Wabi была похожа на медитацию. Они поняли, что наш дом должен поддерживать
-          благополучие семьи, а не просто красиво выглядеть. Результат — пространство, которое наконец ощущается как наше.
+          Получили СГР на линейку из пяти БАД за три месяца. Команда взяла на себя всю
+          документацию и общение с лабораториями — нам осталось только передать образцы.
+          Всё прозрачно: знали бюджет и сроки заранее.
         </blockquote>
 
         {/* Attribution */}
@@ -49,8 +50,8 @@ export function Testimonial() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <p className="text-sm tracking-widest uppercase text-primary-foreground/80">Анна и Михаил Петровы</p>
-          <p className="text-sm text-primary-foreground/60 mt-1">Резиденция в Москве</p>
+          <p className="text-sm tracking-widest uppercase text-primary-foreground/80">Производитель БАД</p>
+          <p className="text-sm text-primary-foreground/60 mt-1">Линейка из 5 продуктов, СГР получено</p>
         </div>
       </div>
     </section>

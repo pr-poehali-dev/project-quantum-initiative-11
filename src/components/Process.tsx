@@ -3,27 +3,27 @@ import { useEffect, useRef, useState } from "react"
 const steps = [
   {
     number: "01",
-    title: "Слушаем",
+    title: "Отправьте нам состав",
     description:
-      "Мы начинаем с присутствия. Понимаем не только ваше пространство, но и то, как вы в нём живёте — ваши ритмы, потребности, стремления.",
+      "Присылайте на почту или звоните. Мы проанализируем продукт на потенциальную возможность регистрации.",
   },
   {
     number: "02",
-    title: "Видим",
+    title: "Получите расчёт",
     description:
-      "Вместе исследуем возможности. Мудборды, образцы материалов и пространственные концепции рождаются из нашего диалога.",
+      "Под вашу задачу мы расписываем полный объём работ (включая разработку техдокументации), бюджет и сроки.",
   },
   {
     number: "03",
-    title: "Создаём",
+    title: "Заключаем договор",
     description:
-      "С намерением и заботой воплощаем видение в жизнь. Каждая деталь продумана, каждый элемент осмыслен.",
+      "Работаем по типовому договору с возможностью внесения правок с вашей стороны.",
   },
   {
     number: "04",
-    title: "Живём",
+    title: "Передайте образцы",
     description:
-      "Пространство готово, но путешествие продолжается. Мы следим, чтобы ваш дом развивался вместе с вами.",
+      "Для старта испытаний нужны оригиналы документов и образцы продукции.",
   },
 ]
 
@@ -49,7 +49,7 @@ export function Process() {
   }, [])
 
   return (
-    <section ref={sectionRef} id="process" className="py-32 lg:py-40 px-6 lg:px-12">
+    <section ref={sectionRef} id="start" className="py-32 lg:py-40 px-6 lg:px-12 bg-sand/50">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-12 gap-16 lg:gap-24">
           {/* Left Column - Sticky Header */}
@@ -60,23 +60,23 @@ export function Process() {
                   isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
                 }`}
               >
-                Наш процесс
+                С чего начать
               </p>
               <h2
                 className={`font-serif text-4xl md:text-5xl font-light text-foreground mb-6 text-balance transition-all duration-1000 delay-200 ${
                   isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                 }`}
               >
-                Путь
-                <span className="italic"> осознанности</span>
+                Как запустить
+                <span className="italic"> проект</span> в работу
               </h2>
               <p
                 className={`text-muted-foreground leading-relaxed transition-all duration-1000 delay-300 ${
                   isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                 }`}
               >
-                Настоящие пространства не создаются в спешке. Они раскрываются через вдумчивый процесс,
-                уважающий и архитектуру, и людей, которые будут здесь жить.
+                Первый шаг — самый простой. Отправьте состав, а мы возьмём на себя всё остальное:
+                от расчёта до внесения продукта в реестр.
               </p>
             </div>
           </div>
