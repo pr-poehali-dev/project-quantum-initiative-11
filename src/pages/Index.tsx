@@ -5,6 +5,10 @@ import { Services } from "@/components/Services"
 import { Timeline } from "@/components/Timeline"
 import { Pricing } from "@/components/Pricing"
 import { Process } from "@/components/Process"
+import { Documents } from "@/components/Documents"
+import { Results } from "@/components/Results"
+import { Regulations } from "@/components/Regulations"
+import { PricingFactors } from "@/components/PricingFactors"
 import { Testimonial } from "@/components/Testimonial"
 import { Contact } from "@/components/Contact"
 import { Footer } from "@/components/Footer"
@@ -19,6 +23,10 @@ export default function Index() {
       <Timeline />
       <Pricing />
       <Process />
+      <Documents />
+      <Results />
+      <Regulations />
+      <PricingFactors />
       <Testimonial />
       <Contact />
       <Footer />
