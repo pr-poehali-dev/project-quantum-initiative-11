@@ -49,7 +49,7 @@ export function Footer() {
               >
                 Telegram
               </a>
-              <p className="text-sm text-muted-foreground leading-relaxed">
+              <p className="text-sm text-foreground">
                 г. Бийск, ул. Яминская, 1
               </p>
             </nav>
