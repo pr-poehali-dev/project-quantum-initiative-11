@@ -59,10 +59,10 @@ export function Footer() {
           <div className="md:col-span-2">
             <p className="text-xs tracking-widest uppercase text-muted-foreground mb-4">Документы</p>
             <nav className="flex flex-col gap-3">
-              <a href="#" className="text-sm text-foreground hover:text-sage transition-colors">
+              <a href="/privacy" className="text-sm text-foreground hover:text-sage transition-colors">
                 Политика
               </a>
-              <a href="#" className="text-sm text-foreground hover:text-sage transition-colors">
+              <a href="/terms" className="text-sm text-foreground hover:text-sage transition-colors">
                 Условия
               </a>
             </nav>
