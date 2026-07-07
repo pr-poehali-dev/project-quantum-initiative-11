@@ -5,10 +5,14 @@ export function Footer() {
         <div className="grid md:grid-cols-12 gap-12">
           {/* Logo & Tagline */}
           <div className="md:col-span-4">
-            <p className="font-serif text-2xl tracking-wide text-foreground mb-4">Экспертиза и регистрация</p>
-            <p className="text-sm text-muted-foreground leading-relaxed">
+            <p className="font-serif text-2xl tracking-wide text-foreground mb-4">ООО «Экспертиза и регистрация»</p>
+            <p className="text-sm text-muted-foreground leading-relaxed mb-2">
               Регистрация БАД под ключ — от лабораторных исследований до внесения в реестр Роспотребнадзора.
             </p>
+            <p className="text-sm text-muted-foreground leading-relaxed mb-2">
+              г. Бийск, ул. Яминская, 1
+            </p>
+            <p className="text-xs text-muted-foreground">Резидент технопарка «АлтайБиоТех»</p>
           </div>
 
           {/* Navigation */}
