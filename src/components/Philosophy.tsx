@@ -56,7 +56,9 @@ export function Philosophy() {
               Ваш продукт —
               <span className="italic"> пищевая</span>
               <br />
-              продукция, а не лекарство
+              продукция,
+              <br />
+              а не лекарство
             </h2>
 
             <div
