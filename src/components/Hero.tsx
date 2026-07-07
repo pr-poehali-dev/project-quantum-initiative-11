@@ -13,15 +13,6 @@ export function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-background via-sand/30 to-background" />
 
       <div className="relative z-10 max-w-5xl mx-auto text-center">
-        {/* Overline */}
-        <p
-          className={`text-xs tracking-[0.3em] uppercase text-muted-foreground mb-8 transition-all duration-1000 delay-300 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-          }`}
-        >
-          Регистрация БАД и СГР
-        </p>
-
         {/* Main Headline */}
         <h1
           className={`font-serif text-5xl md:text-7xl lg:text-8xl font-light leading-[1.1] tracking-tight text-foreground mb-8 text-balance transition-all duration-1000 delay-500 ${
