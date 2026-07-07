@@ -80,6 +80,14 @@ export function Contact() {
                   +7 (961) 981 38 74
                 </a>
               </div>
+              <div>
+                <p className="text-xs tracking-widest uppercase text-muted-foreground mb-2">Адрес</p>
+                <p className="text-foreground">г. Бийск, ул. Яминская, 1</p>
+              </div>
+              <div className="pt-6 border-t border-border">
+                <p className="text-foreground">ООО «Экспертиза и регистрация»</p>
+                <p className="text-muted-foreground text-sm mt-1">Резидент технопарка «АлтайБиоТех»</p>
+              </div>
             </div>
           </div>
 
