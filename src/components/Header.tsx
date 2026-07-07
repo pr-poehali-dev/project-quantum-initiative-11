@@ -6,13 +6,13 @@ export function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm">
       <nav className="mx-auto max-w-7xl px-6 lg:px-12">
-        <div className="flex h-32 items-center justify-between">
+        <div className="flex h-40 items-center justify-between">
           {/* Logo */}
           <a href="/" className="flex items-center">
             <img
               src="https://cdn.poehali.dev/projects/46bc5300-06d7-4dec-8c93-1cbeb365c2f6/bucket/6af6d695-c703-49a7-9830-2635ed52359c.png"
               alt="Экспертиза и регистрация"
-              className="h-28 w-auto"
+              className="h-36 w-auto"
             />
           </a>
 
