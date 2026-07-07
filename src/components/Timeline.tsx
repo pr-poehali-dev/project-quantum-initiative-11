@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react"
 
 const rows = [
   { stage: "Проверка состава на перспективу", duration: "до 2 рабочих дней", weight: "w-[10%]" },
-  { stage: "Лабораторные исследования образцов", duration: "от 3 недель", weight: "w-[55%]" },
+  { stage: "Лабораторные исследования образцов и разработка разрешительной документации", duration: "от 3 недель", weight: "w-[55%]" },
   { stage: "Экспертиза", duration: "1 месяц", weight: "w-[70%]" },
   { stage: "Оформление бланка СГР", duration: "2–3 недели", weight: "w-[45%]" },
 ]
