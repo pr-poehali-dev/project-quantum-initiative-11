@@ -29,7 +29,7 @@ export function Timeline() {
   }, [])
 
   return (
-    <section ref={sectionRef} className="py-32 lg:py-40 px-6 lg:px-12 bg-sand/50">
+    <section id="timeline" ref={sectionRef} className="py-32 lg:py-40 px-6 lg:px-12 bg-sand/50">
       <div className="max-w-5xl mx-auto">
         {/* Header */}
         <div className="mb-16">

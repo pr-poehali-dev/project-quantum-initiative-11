@@ -19,16 +19,16 @@ export function Header() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-12">
             <a
-              href="#philosophy"
-              className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors duration-500"
-            >
-              О регистрации
-            </a>
-            <a
               href="#services"
               className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors duration-500"
             >
               Этапы
+            </a>
+            <a
+              href="#timeline"
+              className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors duration-500"
+            >
+              Сроки
             </a>
             <a
               href="#process"
@@ -68,18 +68,18 @@ export function Header() {
         >
           <div className="flex flex-col gap-6 pt-4">
             <a
-              href="#philosophy"
-              onClick={() => setIsMenuOpen(false)}
-              className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors"
-            >
-              О регистрации
-            </a>
-            <a
               href="#services"
               onClick={() => setIsMenuOpen(false)}
               className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors"
             >
               Этапы
+            </a>
+            <a
+              href="#timeline"
+              onClick={() => setIsMenuOpen(false)}
+              className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Сроки
             </a>
             <a
               href="#process"
