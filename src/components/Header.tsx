@@ -8,8 +8,12 @@ export function Header() {
       <nav className="mx-auto max-w-7xl px-6 lg:px-12">
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
-          <a href="/" className="font-serif text-2xl tracking-wide text-foreground">
-            Экспертиза<span className="text-sage"> и регистрация</span>
+          <a href="/" className="flex items-center">
+            <img
+              src="https://cdn.poehali.dev/projects/46bc5300-06d7-4dec-8c93-1cbeb365c2f6/bucket/6af6d695-c703-49a7-9830-2635ed52359c.png"
+              alt="Экспертиза и регистрация"
+              className="h-10 w-auto"
+            />
           </a>
 
           {/* Desktop Navigation */}
