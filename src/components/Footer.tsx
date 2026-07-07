@@ -7,11 +7,8 @@ export function Footer() {
           <div className="md:col-span-4">
             <p className="font-serif text-2xl tracking-wide text-foreground mb-4">ООО «Экспертиза и регистрация»</p>
             <p className="text-xs text-muted-foreground mb-4">Резидент технопарка «АлтайБиоТех»</p>
-            <p className="text-sm text-muted-foreground leading-relaxed mb-2">
-              Регистрация БАД под ключ — от лабораторных исследований до внесения в реестр Роспотребнадзора.
-            </p>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              г. Бийск, ул. Яминская, 1
+              Регистрация БАД под ключ — от лабораторных исследований до внесения в реестр Роспотребнадзора.
             </p>
           </div>
 
@@ -44,9 +41,17 @@ export function Footer() {
               <a href="tel:+79619813874" className="text-sm text-foreground hover:text-sage transition-colors">
                 +7 (961) 981 38 74
               </a>
-              <a href="#" className="text-sm text-foreground hover:text-sage transition-colors">
+              <a
+                href="https://t.me/examination_registration"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-foreground hover:text-sage transition-colors"
+              >
                 Telegram
               </a>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                г. Бийск, ул. Яминская, 1
+              </p>
             </nav>
           </div>
 
