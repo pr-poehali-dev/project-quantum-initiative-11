@@ -60,8 +60,8 @@ export function Timeline() {
               style={{ transitionDelay: `${300 + index * 120}ms` }}
             >
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-4">
-                <p className="text-foreground">{row.stage}</p>
-                <p className="text-sm tracking-wide text-sage font-medium shrink-0">{row.duration}</p>
+                <p className="text-lg md:text-xl text-foreground">{row.stage}</p>
+                <p className="text-lg md:text-xl tracking-wide text-sage font-medium shrink-0">{row.duration}</p>
               </div>
               <div className="h-1 bg-muted overflow-hidden">
                 <div
