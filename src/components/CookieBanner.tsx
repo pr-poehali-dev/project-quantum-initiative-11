@@ -28,7 +28,7 @@ export function CookieBanner() {
         isOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
       }`}
     >
-      <div className="max-w-4xl mx-auto bg-background border border-border shadow-lg p-6 sm:p-8">
+      <div className="max-w-7xl mx-auto bg-background border border-border shadow-lg p-6 sm:p-8">
         <div className="flex flex-col sm:flex-row sm:items-start gap-6">
           <div className="flex-1">
             <p className="font-serif text-lg text-foreground mb-2">Мы используем cookie-файлы</p>
