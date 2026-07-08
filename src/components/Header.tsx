@@ -10,9 +10,9 @@ export function Header() {
           {/* Logo */}
           <a href="/" className="flex items-center">
             <img
-              src="https://cdn.poehali.dev/projects/46bc5300-06d7-4dec-8c93-1cbeb365c2f6/bucket/6af6d695-c703-49a7-9830-2635ed52359c.png"
+              src="https://cdn.poehali.dev/projects/46bc5300-06d7-4dec-8c93-1cbeb365c2f6/bucket/5e1ed287-e071-4393-a4ce-a8464e0b6a16.png"
               alt="Экспертиза и регистрация"
-              className="h-36 w-auto"
+              className="h-20 w-auto"
             />
           </a>
 
