@@ -26,7 +26,7 @@ export function MedicineRegistration() {
     <section ref={sectionRef} className="py-32 lg:py-40 px-6 lg:px-12 bg-sand/50">
       <div className="max-w-5xl mx-auto">
         <div className="mb-16">
-          <p className={`text-xs tracking-[0.3em] uppercase text-terracotta mb-6 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}>
+          <p className={`text-base tracking-[0.3em] uppercase text-terracotta mb-6 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}>
             Регистрация лекарственных средств
           </p>
           <h2 className={`font-serif text-4xl md:text-5xl lg:text-6xl font-light text-foreground text-balance mb-6 transition-all duration-1000 delay-200 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>

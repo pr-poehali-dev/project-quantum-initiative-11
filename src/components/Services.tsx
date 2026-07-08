@@ -49,7 +49,7 @@ export function Services() {
         {/* Header */}
         <div className="text-center mb-20">
           <p
-            className={`text-xs tracking-[0.3em] uppercase text-terracotta mb-6 transition-all duration-1000 ${
+            className={`text-base tracking-[0.3em] uppercase text-terracotta mb-6 transition-all duration-1000 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
