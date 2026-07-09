@@ -1,6 +1,8 @@
 import type React from "react"
 import { useEffect, useRef, useState } from "react"
 
+const CONTACT_FORM_URL = "https://functions.poehali.dev/08979568-c37d-4309-80be-84ceeee4247c"
+
 export function Contact() {
   const [isVisible, setIsVisible] = useState(false)
   const [formState, setFormState] = useState({
@@ -8,6 +10,7 @@ export function Contact() {
     email: "",
     message: "",
   })
+  const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle")
   const sectionRef = useRef<HTMLElement>(null)
 
   useEffect(() => {
@@ -27,10 +30,21 @@ export function Contact() {
     return () => observer.disconnect()
   }, [])
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission
-    console.log(formState)
+    setStatus("sending")
+    try {
+      const response = await fetch(CONTACT_FORM_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formState),
+      })
+      if (!response.ok) throw new Error("Request failed")
+      setStatus("success")
+      setFormState({ name: "", email: "", message: "" })
+    } catch {
+      setStatus("error")
+    }
   }
 
   return (
@@ -142,9 +156,10 @@ export function Contact() {
               </div>
               <button
                 type="submit"
-                className="group inline-flex items-center gap-3 px-8 py-4 bg-sage text-primary-foreground text-sm tracking-widest uppercase hover:bg-sage/90 transition-all duration-500"
+                disabled={status === "sending"}
+                className="group inline-flex items-center gap-3 px-8 py-4 bg-sage text-primary-foreground text-sm tracking-widest uppercase hover:bg-sage/90 transition-all duration-500 disabled:opacity-60 disabled:cursor-not-allowed"
               >
-                Отправить состав
+                {status === "sending" ? "Отправка..." : "Отправить состав"}
                 <svg
                   className="w-4 h-4 transition-transform duration-500 group-hover:translate-x-1"
                   fill="none"
@@ -154,6 +169,12 @@ export function Contact() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </button>
+              {status === "success" && (
+                <p className="text-sm text-sage">Заявка отправлена! Мы свяжемся с вами в ближайшее время.</p>
+              )}
+              {status === "error" && (
+                <p className="text-sm text-destructive">Не удалось отправить заявку. Попробуйте ещё раз или напишите на expert-reg@mail.ru</p>
+              )}
             </form>
           </div>
         </div>
